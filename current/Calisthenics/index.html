@@ -1,0 +1,136 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calisthenics Pro - Unlock Your Potential</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Calisthenics Pro</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="quotes.html">Quotes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Video Background -->
+    <video autoplay muted loop id="bg-video">
+        <source src="calisthenics-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Discover the Power of Calisthenics</h1>
+            <p>Transform your body with bodyweight training – anytime, anywhere.</p>
+            <button id="learn-more-btn" class="cta-btn">Learn More</button>
+        </div>
+    </header>
+
+    <!-- Benefits Section with 3D Cards -->
+    <section class="benefits">
+        <h2>Benefits of Calisthenics</h2>
+        <div class="benefits-grid">
+            <div class="benefit-card" data-benefit="strength">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>Builds Strength</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Calisthenics uses your body weight to develop functional strength in muscles like core, arms, and legs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="benefit-card" data-benefit="flexibility">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>Improves Flexibility</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Dynamic movements enhance range of motion and reduce injury risk.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="benefit-card" data-benefit="endurance">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>Enhances Endurance</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>High-rep exercises build cardiovascular stamina and mental resilience.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="benefit-card" data-benefit="accessibility">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>No Equipment Needed</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Train anywhere without gym memberships or expensive gear.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <h2>Calisthenics in Action</h2>
+        <div class="gallery-grid">
+            <img src="https://bodyweightsports.eu/wp-content/uploads/2023/07/tornado-grip--1024x818.jpg" alt="Calisthenics Exercise 1">
+            <img src="https://fitnessvolt.com/wp-content/uploads/2024/11/calisthenics-for-weight-loss.jpg.webp" alt="Calisthenics Exercise 2">
+            <img src="https://bodyweightsports.eu/wp-content/uploads/2023/07/Screenshot_20230426-104756_Gallery-1536x1038-1-1024x692.jpg" alt="Calisthenics Exercise 3">
+            <img src="https://cdn.gymaholic.co/articles/21-day-calisthenics-workout-to-kickstart-your-fitness-journey/man-plank.jpg" alt="Calisthenics Exercise 4">
+            <img src="https://bodyweightsports.eu/wp-content/uploads/2023/07/aviary-image-1530689676032-1024x683.jpeg" alt="Calisthenics Exercise 5">
+            <img src="https://madbarzpictures.blob.core.windows.net/madbarzpictures/human-flag.jpg" alt="Calisthenics Exercise 6">
+        </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section class="videos">
+        <h2>Workout Videos</h2>
+        <div class="videos-grid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zQQQ1W-ELCo" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mtsi_k4OC3w" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7aCqZ_7GqUg" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Interactive Section: Simple Quiz -->
+    <section class="interactive">
+        <h2>Test Your Knowledge</h2>
+        <p>What is calisthenics primarily based on?</p>
+        <div class="options">
+            <button class="quiz-btn" data-answer="correct">Bodyweight Exercises</button>
+            <button class="quiz-btn" data-answer="wrong">Weightlifting</button>
+            <button class="quiz-btn" data-answer="wrong">Running</button>
+        </div>
+        <p id="quiz-feedback"></p>
+    </section>
+
+    <!-- Live Chat -->
+    <div id="chat-button" class="chat-button">Chat with Bros</div>
+    <div id="chat-modal" class="chat-modal">
+        <div class="chat-content">
+            <span id="close-chat" class="close">&times;</span>
+            <div id="chat-messages"></div>
+            <input id="chat-input" type="text" placeholder="Type your message...">
+            <button id="send-chat">Send</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Calisthenics Pro. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
